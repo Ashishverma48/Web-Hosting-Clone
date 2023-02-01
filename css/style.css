@@ -40,6 +40,9 @@ nav{
     align-items: center;
     position: relative;
     z-index: 99;
+    position: fixed;
+    width: 100%;
+    background-color: #4c1e51;
   
 }
 nav>.bg-img{
@@ -99,6 +102,8 @@ nav>div a:hover{
    #2d0a31;
     display: flex;
     padding: 3rem;
+    overflow: hidden;
+    padding-top: 8rem;
 }
 .main-detail>:nth-child(1){
     /* border: 2px solid red; */
@@ -123,6 +128,12 @@ nav>div a:hover{
 }
 .main-detail>:nth-child(1) button{
     width: 200px;
+}
+.main-detail>:nth-child(2){
+    width: 50%;
+}
+.main-detail>:nth-child(2) img{
+    width: 100%;
 }
 
 /* SEARCH DOMAIN*/
@@ -284,6 +295,7 @@ nav>div a:hover{
 }
 .plan>div>div img{
     width: 70px;
+    transition: .2s ease-out;
 }
 .plan>div>div>p{
     color: rgba(0, 0, 0, 0.813);
@@ -496,7 +508,7 @@ nav>div a:hover{
 /* TESTOMONIAL SECTION */
 
 .testomonial{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     /* border: 2px solid red; */
     background-color: #2d0a31;
@@ -581,7 +593,7 @@ footer>div{
     text-align: center;
     border-radius: 20px;
     outline: none;
-    border: 1px solid rgb(70, 43, 226);
+    border: 1px solid rgb(255, 255, 255);
     background-color: transparent;
     color: white;
 }
