@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragistration</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .main{
+            height: 115vh;
+            width: 100%;
+        }
+        .main video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .input-form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 110vh;
+            width: 480px;
+            /* border: 2px solid red; */
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+            background-color: rgba(0, 0, 0,.4);
+            border-radius: 5px;
+            
+            
+        }
+        .input-form div{
+            margin: 1.8rem 0rem;
+        }
+        input{
+            width: 100%;
+            padding: .8rem;
+            outline: none;
+            border: 0;
+            background-color: transparent;
+            border-bottom: 1px solid #fff;
+            color: white;
+            font-size: 1.1rem;
+        }
+        input::placeholder{
+            font-size: 1.1rem;
+            color: darkorchid;
+        }
+        label{
+            font-size: 1.1rem;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        button{
+            width: 100%;
+            padding: .5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: white;
+            background-color: darkorchid;
+            border: 0;
+        }
+        a{
+            display: inline-block;
+            text-align: end;
+            font-size: 1.1rem;
+            color: rgb(250, 11, 234);
+            padding-right: 1rem;
+        }
+        a:hover{
+            color: white;
+           font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <video src="./img/login-bg.mp4" autoplay loop muted></video>
+    <div class="input-form">
+        <h1>Ragistration Here</h1>
+        <form action="">
+           <div>
+            <label for="">Full Name</label>
+            <input type="text" placeholder="Full Name">
+           </div>
+           <div>
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Email Address">
+           </div>
+            <div>
+                <label for="">Password</label>
+            <input type="password" placeholder="Password">
+            </div>
+           <div>
+            <label for="">Confirm Password</label>
+            <input type="password" placeholder="Confirm Password">
+           </div>
+        </form>
+        <button>Ragistration</button>
+        <a href="./login.html">Login</a>
+    </div>
+   </div>
+</body>
+</html>

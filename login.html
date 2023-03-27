@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .main{
+            height: 115vh;
+            width: 100%;
+            
+        }
+        .main video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+        img{
+            width: 95px;
+            height: 95px;
+            z-index: -1 ;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translate(-50%);
+            vertical-align: middle;
+            
+            border: 15px solid rgba(255, 255, 255,.1);
+            border-radius: 50%;
+        }
+        .input-form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 110vh;
+            width: 480px;
+            /* border: 2px solid red; */
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+            background-color: rgba(0, 0, 0,.5);
+            border-radius: 5px;
+            
+            
+        }
+        .input-form div{
+            margin: 1.8rem 0rem;
+        }
+        input{
+            width: 100%;
+            padding: .8rem;
+            outline: none;
+            border: 0;
+            background-color: transparent;
+            border-bottom: 1px solid #fff;
+            color: white;
+            font-size: 1.1rem;
+        }
+        input::placeholder{
+            font-size: 1.1rem;
+            color: rgb(250, 11, 234);
+        }
+        label{
+            font-size: 1.1rem;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        button{
+            width: 100%;
+            padding: .5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: white;
+            background-color:  rgb(250, 11, 234);
+            border: 0;
+            cursor: pointer;
+        }
+        button:hover{
+            transition: .8s ease-out;
+            background-image: linear-gradient(to right,rgb(250,11,234),rgb(250,11,140));
+        }
+        .input-form>:nth-last-child(1){
+            line-height: 2rem;
+        }
+        a{
+            
+            display: block;
+            font-size: 1.2rem;
+            color: rgb(250, 11, 234);
+        }
+        a:hover{
+            color: white;
+            transition: .2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <video src="./img/login-bg.mp4"  autoplay muted loop >
+
+        <source>
+    </video>
+    <div class="input-form">
+       <div>
+        <a href="">
+            <img src="./img/logo/loder.png" alt="">
+        </a>
+       </div>
+        <h1>Ragistration Here</h1>
+        <form action="">
+           <div>
+            <label for="">Email Address</label>
+            <input type="email" placeholder="Email Address">
+           </div>
+            <div>
+                <label for="">Password</label>
+            <input type="password" placeholder="Password">
+            </div>
+        </form>
+        <button>Login</button>
+      <div>
+        <a href="#">Forget Password</a>
+        <a href="./ragister.html">Ragistration</a>
+      </div>
+    </div>
+   </div>
+</body>
+</html>
